@@ -56,15 +56,7 @@ def check_for_events():
             if event.key == pygame.K_RIGHT:
                 change_to = 'RIGHT' 
 
-    # if pygame.key.get_pressed()[pygame.K_UP] and direction!='DOWN':
-    #     direction = 'UP'
-    # if pygame.key.get_pressed()[pygame.K_DOWN] and direction!='UP':
-    #     direction = 'DOWN'
-    # if pygame.key.get_pressed()[pygame.K_LEFT] and direction !='RIGHT':
-    #     direction = 'LEFT'
-    # if pygame.key.get_pressed()[pygame.K_RIGHT] and direction!='LEFT':
-    #     direction =  'RIGHT'
-    
+
     if change_to == 'UP' and direction !='DOWN':
         direction = 'UP'  
     if change_to == 'DOWN' and direction != 'UP':
