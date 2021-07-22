@@ -79,10 +79,10 @@ def update_snake():
     This should contain the code for snake to move, grow, detect walls etc.
     """
     # Code for making the snake move in the expected direction
-    global score
-    global food_pos
-    global snake_pos
-    global snake_body
+    # global score
+    # global food_pos
+    # global snake_pos
+    # global snake_body
 
     if direction =='RIGHT':
         snake_pos[0] += 10
@@ -119,7 +119,7 @@ def create_food():
     if food_spawn == False:
         food_pos = [random.randrange(40,frame_size_x-40),random.randrange(40,frame_size_y-40)]    
         food_spawn = True
-    pygame.draw.rect(game_window, (100,200,0), (food_pos[0],food_pos[1],10,10))
+    pygame.draw.rect(game_window, (200,200,200), (food_pos[0],food_pos[1],10,10))
 
 
 
@@ -127,7 +127,7 @@ def show_score(pos, color, font, size):
     """
     It takes in the above arguements and shows the score at the given pos according to the color, font and size.
     """
-    global score
+    
     score_font = pygame.font.SysFont(font,size)
     score_surface = score_font.render('Score:' +str(score),True, color)
     font_pos = score_surface.get_rect(center = pos)
@@ -158,7 +158,7 @@ def game_over():
     game_window.blit(game_message_surface,game_message_rect)
     pygame.display.flip()
 
-    time.sleep(2)
+    time.sleep(3)
     pygame.quit()
     sys.exit()
 
