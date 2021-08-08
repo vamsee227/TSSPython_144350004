@@ -27,3 +27,6 @@ except:
   
  the time module is used to set the sleep time before the driver.close() closes the browser
  
+ The code is used for downloading few sample files in folder using for loop and navigating back and forth to download files from different folders.
+ 
+ 
